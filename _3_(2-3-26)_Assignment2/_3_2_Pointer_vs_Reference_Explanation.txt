@@ -1,0 +1,28 @@
+1. Two differences between pointer and reference
+------> 
+Pointer	:
+1. Stores address of variable 
+2. Can be NULL	
+
+Reference : 
+1. Alias of variable
+2. Cannot be NULL
+
+2. Why references cannot be reseated but pointers can
+--------> 
+Pointer:
+
+int a=10,b=20;
+int *p=&a;
+p=&b;
+
+Pointer can point to another variable.
+
+Reference:
+int &r=a;
+After creation it must always refer to the same variable, so it cannot be reseated.
+
+3. Why references cannot be NULL
+----------> 
+A reference must refer to a valid variable at the time of initialization.
+Allowing NULL would mean the reference refers to no object, which is invalid.

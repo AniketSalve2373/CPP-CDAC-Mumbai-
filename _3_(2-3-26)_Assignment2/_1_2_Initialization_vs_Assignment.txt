@@ -1,0 +1,19 @@
+1. Why must initialization happen before assignment?
+----------> 
+Initialization happens when an object is created.
+Assignment happens after the object already exists.
+
+Example:
+int x = 5;  → initialization
+x = 10;     → assignment
+For class objects, members must first be initialized to create a valid object, then they can be changed using assignment.
+
+2. When is initialization preferred over assignment?
+----------> 
+Initialization is preferred when:
+Creating objects
+Initializing const variables
+Initializing references
+Using constructor initializer lists
+
+It is also faster because memory is initialized directly instead of first creating a default value and then assigning a new value.

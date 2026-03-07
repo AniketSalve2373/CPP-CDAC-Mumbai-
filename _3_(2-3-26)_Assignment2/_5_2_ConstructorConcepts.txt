@@ -1,0 +1,20 @@
+1. When does compiler generate default constructor?
+------------> 
+Compiler generates a default constructor automatically if no constructor is defined in the class.
+
+2. When does compiler NOT generate one?
+--------------> 
+Compiler will not generate default constructor if:
+
+Programmer already defines any constructor.
+
+3. Can constructors be overloaded?
+-------------> 
+Yes.
+
+Constructors can be overloaded by providing different parameter lists.
+
+Example:
+
+Student()
+Student(int,string,float)

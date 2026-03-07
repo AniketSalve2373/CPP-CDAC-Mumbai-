@@ -1,0 +1,29 @@
+1. Why constructors are not called when using malloc
+---------> 
+malloc() is a C function that only allocates raw memory.
+It does not know about C++ classes or constructors, so constructors are not executed.
+
+2. Why new is preferred in C++
+---------> 
+new:
+Calls constructor
+Safer
+Type safe
+No need for casting
+
+3. Difference in return types
+------> 
+new : Returns correct type pointer, No casting needed
+malloc : Returns void* , Requires casting
+
+4. Why malloc cannot initialize complex types
+----------> 
+malloc only allocates raw memory.
+
+Complex objects require:
+
+constructor execution
+
+initialization logic
+
+Since malloc does not call constructors, complex objects cannot be properly initialized.

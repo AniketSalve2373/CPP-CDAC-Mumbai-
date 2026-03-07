@@ -1,0 +1,12 @@
+Reference variables act as aliases (another name) for an existing variable.
+
+Example:
+
+int x = 10;
+int &ref = x;
+
+Here:
+
+ref and x refer to the same memory location
+
+So when swapByReference() modifies a and b, it directly modifies the original variables in main(), which is why the swap works.

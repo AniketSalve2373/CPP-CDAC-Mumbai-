@@ -1,0 +1,26 @@
+1. Why must const members be initialized in initializer list?
+-------------> 
+const variables cannot be modified after initialization.
+
+So they must be initialized directly when the object is created, using the initializer list.
+
+2. What happens if you assign const member inside constructor body?
+-------------> 
+It will produce a compile-time error.
+
+Example:
+
+employeeId = id;   // ERROR
+
+3. Why initializer list is faster than assignment?
+-------------> 
+Initializer list:
+
+direct initialization
+
+Assignment:
+
+default initialization
+then assignment
+
+So initializer list avoids an extra step and is therefore more efficient.
