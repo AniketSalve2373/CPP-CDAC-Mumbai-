@@ -1,0 +1,21 @@
+Answer the following questions: 
+1. Which constructor will be called first: Student or Result? 
+-------> The Student constructor is called first.
+Reason: In inheritance, the base class constructor always executes before the derived class constructor.
+Order of execution:
+1. Student constructor
+2. Result constructor
+
+2. Does the program demonstrate early binding or late binding? 
+-------> The program demonstrates Late Binding (Runtime Polymorphism).
+Reason:
+1. The function display() is declared virtual.
+2. The function call is made using a base class pointer.
+3. The correct function (Result::display()) is decided at runtime.
+
+3. Why is the display() function declared as virtual
+------->The display() function is declared virtual to support runtime polymorphism.
+This allows:
+1. A base class pointer to call the derived class function.
+2. The program to decide which function to execute at runtime.
+3. Without virtual, the base class version of display() would be called instead.
